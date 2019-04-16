@@ -1,0 +1,29 @@
+{ 
+    "items":
+    [
+        {"id": 1, "name": "dress", "price": 100, "imgUrl": "/dress1.jpg", "selected": false},
+        {"id": 2, "name": "dress", "price": 150, "imgUrl": "/dress2.jpg", "selected": false},
+        {"id": 3, "name": "dress", "price": 130, "imgUrl": "/dress3.jpg", "selected": false},
+        {"id": 4, "name": "dress", "price": 120, "imgUrl": "/dress4.jpg", "selected": false},
+        {"id": 5, "name": "dress", "price": 180, "imgUrl": "/dress5.jpg", "selected": false},
+        {"id": 6, "name": "dress", "price": 200, "imgUrl": "/dress6.jpg", "selected": false},
+        {"id": 8, "name": "dress", "price": 105, "imgUrl": "/dress7.jpg", "selected": false},
+        {"id": 9, "name": "dress", "price": 110, "imgUrl": "/dress8.jpg", "selected": false},
+        {"id": 10, "name": "dress", "price": 170, "imgUrl": "/dress9.jpg", "selected": false},
+        {"id": 11, "name": "jeans", "price": 130, "imgUrl": "/jeans1.jpg", "selected": false},
+        {"id": 12, "name": "jeans", "price": 155, "imgUrl": "/jeans2.jpg", "selected": false},
+        {"id": 13, "name": "jeans", "price": 180, "imgUrl": "/jeans3.jpg", "selected": false},
+        {"id": 14, "name": "jeans", "price": 370, "imgUrl": "/jeans4.jpg", "selected": false},
+        {"id": 15, "name": "jeans", "price": 240, "imgUrl": "/jeans5.jpg", "selected": false},
+        {"id": 16, "name": "jeans", "price": 150, "imgUrl": "/jeans6.jpg", "selected": false},
+        {"id": 17, "name": "jeans", "price": 350, "imgUrl": "/jeans7.jpg", "selected": false},
+        {"id": 18, "name": "shirt", "price": 220, "imgUrl": "/shirt1.jpg", "selected": false},
+        {"id": 19, "name": "shirt", "price": 120, "imgUrl": "/shirt2.jpg", "selected": false},
+        {"id": 20, "name": "shirt", "price": 230, "imgUrl": "/shirt3.jpg", "selected": false},
+        {"id": 21, "name": "shirt", "price": 50, "imgUrl": "/shirt4.jpg", "selected": false},
+        {"id": 22, "name": "shirt", "price": 80, "imgUrl": "/shirt5.jpg", "selected": false},
+        {"id": 23, "name": "shirt", "price": 40, "imgUrl": "/shirt6.jpg", "selected": false},
+        {"id": 24, "name": "shirt", "price": 60, "imgUrl": "/shirt7.jpg", "selected": false},
+        {"id": 25, "name": "shirt", "price": 70, "imgUrl": "/shirt8.jpg", "selected": false}
+    ]
+}
