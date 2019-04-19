@@ -7,7 +7,11 @@ class Item extends Component {
     render() { 
         return (  
             <div className="item-container">
-                <img className="item-img" src={this.props.item.imgUrl} alt=""></img>
+                <img 
+                    className="item-img" 
+                    src={process.env.PUBLIC_URL + this.props.item.imgUrl} 
+                    alt="">
+                </img>
                 <div>Name: {this.props.item.name}</div>
                 <div>Price: {this.props.item.price}</div>
                 <button 
