@@ -6,7 +6,11 @@ class Counter extends Component {
         return (
         <div>
             <div className="selected-item-div width-20">
-                <img className="counter-img" src={this.props.counter.item.imgUrl} alt=""></img>
+                <img 
+                    className="counter-img" 
+                    src={process.env.PUBLIC_URL + this.props.counter.item.imgUrl} 
+                    alt="">
+                </img>
             </div>
             <div className="selected-item-div width-15">
                 {this.props.counter.item.price}
