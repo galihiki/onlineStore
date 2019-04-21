@@ -20,11 +20,11 @@ class App extends Component {
             <div className="app-container-style">
                 <Router>
                     <NavBar totalSelectedItems={this.state.totalSelectedItems}/>
-                    <Route exact path="/" active render={props => 
+                    <Route exact path="/onlineStore" render={props => 
                         <Items 
                             items={this.state.items}
                             onSelectItem={this.handleSelectItem}/>}/>
-                    <Route path="/shoopingCart" render={props => 
+                    <Route path="/onlineStore/shoopingCart" render={props => 
                         <Counters 
                             counters={this.state.counters}
                             onIncrement={this.handleIncrement}

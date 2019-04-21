@@ -8,10 +8,10 @@ class NavBar extends Component {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark nav-style">
                 <ul className="navbar-nav">
                     <li className="nav-item active">
-                        <Link to="/" className="nav-link">Items</Link>
+                        <Link to="/onlineStore" className="nav-link">Items</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/shoopingCart" className="nav-link nav-link-style">Shooping cart</Link>
+                        <Link to="/onlineStore/shoopingCart" className="nav-link nav-link-style">Shooping cart</Link>
                         <span className="total-selected-items" >{this.props.totalSelectedItems}</span>
                     </li>
                 </ul>
