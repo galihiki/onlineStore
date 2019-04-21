@@ -5,30 +5,37 @@ class Counters extends Component {
 
     render() { 
         return ( 
-            <div>
-                <div className="headers">
-                    <div className="selected-item-div width-20">Item</div>
-                    <div className="selected-item-div width-15">price</div>
-                    <div className="selected-item-div width-20">Quantity</div>
-                    <div className="selected-item-div width-15">Total</div>
+            <React.Fragment>
+                <div className="counters">
+                    <div className="headers">
+                        <div className="selected-item-div width-30">Item</div>
+                        <div className="selected-item-div width-20">price</div>
+                        <div className="selected-item-div width-30">Quantity</div>
+                        <div className="selected-item-div width-20">Total</div>
+                    </div>
+                    {this.props.counters.length === 0 && 
+                        <div className="no-items-selected">No items selected</div>}
+                    {this.props.counters.map(counter => 
+                    <Counter 
+                        counter={counter} 
+                        key={counter.id}
+                        onDelete={this.props.onDelete}
+                        onIncrement={this.props.onIncrement}
+                        onDecrement={this.props.onDecrement}>
+                    </Counter>)}
                 </div>
-                {this.props.counters.length === 0 && <div>No ites selected</div>}
-                {this.props.counters.map(counter => 
-                <Counter 
-                    counter={counter} 
-                    key={counter.id}
-                    onDelete={this.props.onDelete}
-                    onIncrement={this.props.onIncrement}
-                    onDecrement={this.props.onDecrement}>
-                </Counter>)}
-                {this.props.counters.length > 0 && 
-                <button 
-                    onClick={this.props.onReset} 
-                    className="btn btn-primary btn-sm m-2">
-                    Reset
-                </button>}
-                {this.props.counters.length > 0  && <div>Total: {this.total()}</div>}
-            </div>
+                { this.props.counters.length > 0 &&
+                    <div className="reset shooping-cart">
+                        <button 
+                            onClick={this.props.onReset} 
+                            className="btn btn-primary btn-sm m-2">
+                            Reset
+                        </button>
+                    </div>}
+                { this.props.counters.length > 0 &&
+                    <div className="total shooping-cart">Total: {this.total()}</div>
+                }
+            </React.Fragment>    
         );
     }
 

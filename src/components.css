@@ -50,8 +50,43 @@
 }
 
 .headers{
-    border-bottom-width: 0.5px;
+    border-bottom-width: 0.8px;
     border-bottom-style: ridge;
     margin-bottom: 5px;
     color:  #999;
+}
+
+.no-items-selected{
+    font-size: 21px;
+    color:  #999;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.counter{
+    margin-bottom: 5px;
+    border-bottom-width: 0.3px;
+    border-bottom-style: ridge;
+
+}
+
+.counters{
+    width: 70%;
+    display: inline-block;
+}
+
+.shooping-cart{
+    display: inline-block;
+    position: fixed;
+}
+
+.total{
+    width: 27%;
+    bottom: 20px;
+    text-align: end;
+    font-size: 20px;
+}
+.reset{
+    width: 30%;
+    text-align: end;
 }
