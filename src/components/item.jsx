@@ -18,7 +18,7 @@ class Item extends Component {
                     className="btn btn-primary btn-sm"
                     onClick={() => this.props.onSelectItem(this.props.item)}
                     disabled={this.props.item.selected}>
-                    {this.props.item.selected == true ? "Selected" : "Add to cart"}
+                    {this.props.item.selected === true ? "Selected" : "Add to cart"}
                 </button>
             </div>
         );

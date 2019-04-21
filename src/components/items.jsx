@@ -4,6 +4,7 @@ import Item from './item';
 class Items extends Component {
     state = {  }
     render() { 
+        console.log("in items");
         return (
             <div>
                 {this.props.items.map(i => 

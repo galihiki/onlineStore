@@ -12,6 +12,7 @@ class Counters extends Component {
                     <div className="selected-item-div width-20">Quantity</div>
                     <div className="selected-item-div width-15">Total</div>
                 </div>
+                {this.props.counters.length === 0 && <div>No ites selected</div>}
                 {this.props.counters.map(counter => 
                 <Counter 
                     counter={counter} 

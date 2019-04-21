@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import NavBar from './navBar'
 import Counters from './counters';
 import Items from './items';
-import Home from './home';
+//import Home from './home';
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
 class App extends Component {
@@ -20,7 +20,7 @@ class App extends Component {
             <div className="app-container-style">
                 <Router>
                     <NavBar totalSelectedItems={this.state.totalSelectedItems}/>
-                    <Route exact path="/" render={props => 
+                    <Route exact path="/" active render={props => 
                         <Items 
                             items={this.state.items}
                             onSelectItem={this.handleSelectItem}/>}/>
@@ -53,7 +53,7 @@ class App extends Component {
         const counters = [...this.state.counters];
         let newCounter = {id: this.CounterId, value: 1, item: item}
         this.CounterId++;
-        this.state.totalSelectedItems++;
+        this.changeTotalSelectedItems("increment");
         counters.push(newCounter);
         this.setState({counters});
     }
@@ -88,7 +88,7 @@ class App extends Component {
     handleDelete = counter => {
         this.updateItemSelectedProp(counter.item, "delete");
         const counters = this.state.counters.filter(c => c.id !== counter.id);
-        this.state.totalSelectedItems--;
+        this.changeTotalSelectedItems("decrement");
         this.setState({counters});
     }
 
@@ -98,6 +98,12 @@ class App extends Component {
         counters[index] = {...counters[index]};
         (action === "increment")? counters[index].value++ : counters[index].value--;
         this.setState({ counters }); 
+    }
+
+    changeTotalSelectedItems(action){
+        let total = this.state.totalSelectedItems;
+        let newTotal = (action === "increment")? total+1 : total-1;
+        this.setState({totalSelectedItems: newTotal});
     }
 }
  
